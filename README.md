@@ -1,5 +1,5 @@
-# EastAnt Atlantis documentation
-Welcome to the EastAnt Atlantis documentation.
+# EastAnt-Atlantis documentation
+Welcome to the EastAnt-Atlantis model documentation. Here you can find references and points of contact for the research and resources behind the development of the model.
 
 ## EastAnt structure
 The EastAnt model is the result of a large collaborative effort of data collation, analysis, and interpretation. The model draws from various sources:
