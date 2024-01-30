@@ -20,3 +20,5 @@ Change details:
 ### 30-01-2024: Primary production, krill numbers and reserve weight
 pPREY for krill predators (e.g., krill-eating seals and penguins, whales) has been increased to keep in check adult and juvenile numbers, which likely overgraze phytoplankton groups. KR age class 01 do not "explode" but remain between 1-1.5x of initial values. Adult numbers still shooting up to 10-12x, with reserve dropping as low reserve younger individuals are recruited into older classes.
 
+### 31-01-2024: Primary production and simplified food web
+Since krill is having trouble building reserves after removing ZM from their diet, I will try to avoid competition for diatom food supply (ZM main predator of PPL). I will redirect ZM towards PPS only, and get krill to be exclusive predator of PPL. Also, according to Pauli et al. 2021 "Selective feeding in Southern Ocean key grazers - diet composition of krill and salps", between 4-15% of krill diet is composed by copepods. I will add ZM back in KR diet gradually so that it doesn't become bulk of diet.
