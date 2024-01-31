@@ -28,3 +28,5 @@ Next steps:
 - Check that C_KR and mum_KR are the same
 - Reduce ZG competition
 - Increase predation on KR to reduce adult numbers
+- Decrease recruitment params in Beverton-Holt KR equation (EA_biol_newdiet_29_d_TEST_19_bev_kr.prm)
+- 
