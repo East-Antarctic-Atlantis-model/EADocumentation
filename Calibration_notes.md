@@ -29,4 +29,15 @@ Next steps:
 - Reduce ZG competition
 - Increase predation on KR to reduce adult numbers
 - Decrease recruitment params in Beverton-Holt KR equation (EA_biol_newdiet_29_d_TEST_19_bev_kr.prm)
-- 
+
+
+### 16-04-2024: Fixing primary production decline
+Primary production is behaving oddly: in ReactiveAtlantis shiny app, the absolute and relative biomass of PPL and PPS (pelagic diatoms and pelagic picophytoplankton, respectively) experience a apike at the beginning, then decline. PPL keeps declining after 100 years of simulation, whilst PPS tends to stabilise around 0.5 of the original value. Multiple potential hypotheses:
+1. nutrients are limited by lack of renewal/stagnant fluxes (physical environ);
+2. competition between groups not balanced (ecological issues);
+3. nutrient-related parameters are too “demanding” of available nutrients (ecological interaction with physical environ).
+
+In Olive: MicroNut values seem to be relatively stable at first, cycling seasonally, but then start declining at around 1/4 of the run duration (25 years into the run). In contrast, NO3 and NH2 generally increase over time. Here, primary producer groups both appear to be struggling and do not show any initial spikes.
+
+What I tried: I wrote a function that allows me to try a suite of different combinations of values, modified by percentage ranges. I changed values for N and MicroNut requirements for PP growth over a range from -50% to +50% over 25% intervals (separately).
+- Changes to KN did not have impact on the output. 
