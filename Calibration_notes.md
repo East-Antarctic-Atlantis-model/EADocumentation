@@ -47,11 +47,11 @@ The "basic" equation for primary producer growth shows that light and nutrient l
 $$\[
 G_{pp} = mum * B_{PP} * \delta_{light} * \delta_{nutrient} ...
 \]$$ 
-ReactiveAtlantis's pp.growth() function suggests that primary producers are not in fact limited by nutrients, but by light.
+ReactiveAtlantis's pp.growth() function suggests that, under the current parametrisation that was optimised for the ROMS physical configuration, primary producers are not in fact limited by nutrients, but by light.
 $\delta$<sub>nutrient</sub> (scalar for nutrient limitation) is close to 1 for almost all boxes at surface layers, meaning that limiting nutrient is not the issue here. 
 $\delta$<sub>light</sub> (scalar for light limitation) is often very low for surface layers - light is being blocked/is not enough for PP growth. 
 
-A parameter that is often influential for competition for light and/or nutrient is mortality; in Atlantis, PP mortality is direclty controlled through either linear mortality (mL) or lysis (KLYS). The "essential" equation is as follows:
+A parameter that is often influential for competition for light and/or nutrient is mortality; in Atlantis, PP mortality is directly controlled through either linear mortality (mL) or lysis (KLYS). The "essential" equation is as follows:
 $$\[
 M_{pp} = \left( \frac{KLYS \times B_{pp}}{\delta_{nutrient} + 0.1} \right) + (mL \times B_{pp})
 \]$$
@@ -62,3 +62,5 @@ What happens if mL is changed from its original value (0.14)?
 - PPL_mL 0.15: PPL biomass spikes then declines, PPS settles at 0.5 of original values 
 - PPL_mL 0.16: PPL biomass spikes then declines to 0 after 25 years. PPS mirrors its trend, spiking once PPL declines
 - Higher PPL_mL values only cause boom-and-bust of PPL biomass to occur earlier.
+
+After setting PPL_mL to 0.15, I need to improve behaviour of model when biomass is high (as KLYS is inv. related to biomass). High biomass can be controlled through lysis, but too high KLYS means that another PP group will likely have the upper hand and spiral out of control. 
