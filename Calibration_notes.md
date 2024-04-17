@@ -44,7 +44,7 @@ What I tried: I wrote a function that allows me to try a suite of different comb
 
 ### 17-04-2024: Primary production limitation issues
 The "basic" equation for primary producer growth shows that light and nutrient limitations control PP fluxes:
-\$$
+$$\
 G_{pp} = mum * B_{PP} * \delta_{light} * \delta_{nutrient} ...
 \$$ 
 ReactiveAtlantis's pp.growth() function suggests that primary producers are not in fact limited by nutrients, but by light.
