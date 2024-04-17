@@ -48,9 +48,9 @@ $\delta$<sub>nutrient</sub> (scalar for nutrient limitation) is close to 1 for a
 $\delta$<sub>light</sub> (scalar for light limitation) is often very low for surface layers - light is being blocked/is not enough for PP growth. 
 
 A parameter that is often influential for competition for light and/or nutrient is mortality; in Atlantis, PP mortality is direclty controlled through either linear mortality (mL) or lysis (KLYS). The "essential" equation is as follows:
-$$\
+$$\[
 M_{pp} = \left( \frac{KLYS \times B_{pp}}{\delta_{nutrient} + 0.1} \right) + (mL \times B_{pp})
-\$$
+\]$$
 KLYS is inversely related to $\delta$<sub>nutrient</sub>. Therefore if $\delta$<sub>nutrient</sub> is high or close to 1 (maximum value, PP is not limited by nutrient availability), KLYS will be particularly powerful. In this instance, increasing KLYS might be too destabilising as $\delta$<sub>nutrient</sub> is generally high. Increasing mL instead might represent a more cautious approach. 
 
 What happens if mL is changed from its original value (0.14)?
