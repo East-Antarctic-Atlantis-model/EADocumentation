@@ -32,7 +32,7 @@ Next steps:
 
 
 ### 16-04-2024: Fixing primary production decline
-Primary production is behaving oddly: in ReactiveAtlantis shiny app, the absolute and relative biomass of PPL and PPS (pelagic diatoms and pelagic picophytoplankton, respectively) experience a apike at the beginning, then decline. PPL keeps declining after 100 years of simulation, whilst PPS tends to stabilise around 0.5 of the original value. Multiple potential hypotheses:
+Primary production is behaving oddly: in ReactiveAtlantis shiny app, the absolute and relative biomass of PPL and PPS (pelagic diatoms and pelagic picophytoplankton, respectively) experience a spike at the beginning, then decline. PPL keeps declining after 100 years of simulation, whilst PPS tends to stabilise around 0.5 of the original value. Multiple potential hypotheses:
 1. nutrients are limited by lack of renewal/stagnant fluxes (physical environ);
 2. competition between groups not balanced (ecological issues);
 3. nutrient-related parameters are too “demanding” of available nutrients (ecological interaction with physical environ).
@@ -48,7 +48,13 @@ $\delta$<sub>nutrient</sub> (scalar for nutrient limitation) is close to 1 for a
 $\delta$<sub>light</sub> (scalar for light limitation) is often very low for surface layers - light is being blocked/is not enough for PP growth. 
 
 A parameter that is often influential for competition for light and/or nutrient is mortality; in Atlantis, PP mortality is direclty controlled through either linear mortality (mL) or lysis (KLYS). The "essential" equation is as follows:
-$$\[
+$$\
 M_{pp} = \left( \frac{KLYS \times B_{pp}}{\delta_{nutrient} + 0.1} \right) + (mL \times B_{pp})
-\]$$
- 
+\$$
+KLYS is inversely related to $\delta$<sub>nutrient</sub>. Therefore if $\delta$<sub>nutrient</sub> is high or close to 1 (maximum value, PP is not limited by nutrient availability), KLYS will be particularly powerful. In this instance, increasing KLYS might be too destabilising as $\delta$<sub>nutrient</sub> is generally high. Increasing mL instead might represent a more cautious approach. 
+
+What happens if mL is changed from its original value (0.14)?
+- PPL_mL 0.02: PPL biomass drops off immediately
+- PPL_mL 0.15: PPL biomass spikes then declines, PPS settles at 0.5 of original values 
+- PPL_mL 0.16: PPL biomass spikes then declines to 0 after 25 years. PPS mirrors its trend, spiking once PPL declines
+- Higher PPL_mL values only cause boom-and-bust of PPL biomass to occur earlier.
