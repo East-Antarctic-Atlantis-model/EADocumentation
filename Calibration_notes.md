@@ -43,6 +43,10 @@ What I tried: I wrote a function that allows me to try a suite of different comb
 - Changes to KN did not have impact on the output. 
 
 ### 17-04-2024: Primary production limitation issues
+The "basic" equation for primary producer growth shows that light and nutrient limitations control PP fluxes:
+\[$$
+G_{pp} = mum * B_{PP} * \delta_{light} * \delta_{nutrient} ...
+\]$$ 
 ReactiveAtlantis's pp.growth() function suggests that primary producers are not in fact limited by nutrients, but by light.
 $\delta$<sub>nutrient</sub> (scalar for nutrient limitation) is close to 1 for almost all boxes at surface layers, meaning that limiting nutrient is not the issue here. 
 $\delta$<sub>light</sub> (scalar for light limitation) is often very low for surface layers - light is being blocked/is not enough for PP growth. 
