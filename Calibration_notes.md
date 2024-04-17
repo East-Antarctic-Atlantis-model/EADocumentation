@@ -44,4 +44,9 @@ What I tried: I wrote a function that allows me to try a suite of different comb
 
 ### 17-04-2024: Primary production limitation issues
 ReactiveAtlantis's pp.growth() function suggests that primary producers are not in fact limited by nutrients, but by light.
-$\delta$ 
+$\delta$<sub>nutrient</sub> (scalar for nutrient limitation) is close to 1 for almost all boxes at surface layers, meaning that limiting nutrient is not the issue here. 
+$\delta$<sub>light</sub> (scalar for light limitation) is often very low for surface layers - light is being blocked/is not enough for PP growth. 
+
+A parameter that is often influential for competition for light and/or nutrient is mortality; in Atlantis, PP mortality is direclty controlled through either linear mortality (mL) or lysis (KLYS). The "essential" equation is as follows:
+$$M_pp=\left(\dfrac{KLYS*B_pp}{\delta_nutrient+0.1}\right)+(mL*B_pp)$$ 
+ 
