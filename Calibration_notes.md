@@ -41,3 +41,7 @@ In Olive: MicroNut values seem to be relatively stable at first, cycling seasona
 
 What I tried: I wrote a function that allows me to try a suite of different combinations of values, modified by percentage ranges. I changed values for N and MicroNut requirements for PP growth over a range from -50% to +50% over 25% intervals (separately).
 - Changes to KN did not have impact on the output. 
+
+### 17-04-2024: Primary production limitation issues
+ReactiveAtlantis's pp.growth() function suggests that primary producers are not in fact limited by nutrients, but by light.
+$\delta$ 
