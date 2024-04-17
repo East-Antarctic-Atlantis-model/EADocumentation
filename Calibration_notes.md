@@ -48,5 +48,7 @@ $\delta$<sub>nutrient</sub> (scalar for nutrient limitation) is close to 1 for a
 $\delta$<sub>light</sub> (scalar for light limitation) is often very low for surface layers - light is being blocked/is not enough for PP growth. 
 
 A parameter that is often influential for competition for light and/or nutrient is mortality; in Atlantis, PP mortality is direclty controlled through either linear mortality (mL) or lysis (KLYS). The "essential" equation is as follows:
-$$M_pp=\left(\dfrac{KLYS*B_pp}{\delta_nutrient+0.1}\right)+(mL*B_pp)$$ 
+\[
+M_{pp} = \left( \frac{KLYS \times B_{pp}}{\delta_{nutrient} + 0.1} \right) + (mL \times B_{pp})
+\]
  
