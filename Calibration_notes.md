@@ -64,4 +64,10 @@ What happens if mL is changed from its original value (0.14)?
 - Higher PPL_mL values only cause boom-and-bust of PPL biomass to occur earlier.
 
 After setting PPL_mL to 0.15, I need to improve behaviour of model when biomass is high (as KLYS is inv. related to biomass). High biomass can be controlled through lysis, but too high KLYS means that another PP group will likely have the upper hand and spiral out of control. I set PPL_KLYS to 0.005 (was 0.001) as an exploratory step. --> PPL_KLYS 0.005 and PPL_mL 0.15 led to a spike of PPL biomass followed by immediate extinction of the functional group. 
+
 ![alt text](image.png)
+
+### 18-04-2024: Primary production limitation issues
+Both nutrient and light limitation occur in surface layers (at least in coastal boxes). 
+KLYS and mL are supposed to facilitate the "cycling" of different groups (e.g., balance out competition between groups by eliminating one group at a faster rate than the other). However, the initial spike of PPL might be due to the group being too quick to grow - i.e., mum_PPL_T15 might be parameter responsible for PPL consuming nutrients too quickly. Even when PPL biomass then declines, the nutrients are presumably "locked away" in the detritus groups for a long time, requiring time to return to surface layers where light is plentiful. Even if B<sub>PP<sub> (primary producer biomass) still existed at minimal levels, it might not be enough to jumpstart the group once again.
+
