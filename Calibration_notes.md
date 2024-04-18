@@ -71,3 +71,14 @@ After setting PPL_mL to 0.15, I need to improve behaviour of model when biomass 
 Both nutrient and light limitation occur in surface layers (at least in coastal boxes). 
 KLYS and mL are supposed to facilitate the "cycling" of different groups (e.g., balance out competition between groups by eliminating one group at a faster rate than the other). However, the initial spike of PPL might be due to the group being too quick to grow - i.e., mum_PPL_T15 might be parameter responsible for PPL consuming nutrients too quickly. Even when PPL biomass then declines, the nutrients are presumably "locked away" in the detritus groups for a long time, requiring time to return to surface layers where light is plentiful. Even if B<sub>PP<sub> (primary producer biomass) still existed at minimal levels, it might not be enough to jumpstart the group once again.
 
+As a first exploratory step, I decreased the growth parameter for PPL (mum_PPL_T15) by 20%, going from the original value of 0.42035 to 0.33628. --> outcome: PPL crashed at beginning of run, no spike.
+I tried decreasing mum_PPL just by 10% (0.378315). --> slightly better outcome than 20% decrease in mum_PPL, but groups still goes extinct, whilst PPS increases.
+
+Next step is to increase PPS_mL to tweak the balance between primary producers. 
+I will increase PPS_mL from 0.14 to 0.15 as first step, as mL parameters seems to be very influential on PP groups. --> PPS biomass dips below 0.5 of initial values (close to 0.25), but an interesting pattern emerges: each year, the biomass spikes twice (instead of once).
+
+I focused on mum_PPL_T15 again, this time decreasing it by 5% (from 0.42 to 0.39). --> PPS relative biomass is now around 1, slowly increasing as the initial spike of PPL decreases over time. This trend then amplifies over time, with PPS taking over.
+mum_PPL_T15 0.41: better balance, although PPL still spikes (although not as much as original run) at the beginning.
+
+![alt text](image-1.png)
+
