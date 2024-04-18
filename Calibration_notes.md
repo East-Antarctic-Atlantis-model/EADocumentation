@@ -82,3 +82,4 @@ mum_PPL_T15 0.41: better balance, although PPL still spikes (although not as muc
 
 ![alt text](image-1.png)
 
+Increasing KLYS_PPL to 0.003 caused PPL to spike, and PPL to drop to 0 at the beginning of the run. I changed KLYS_PPL to 0.0015; decreasing KLYS_PPL might be a way to prevent initial spike in PPL biomass?
