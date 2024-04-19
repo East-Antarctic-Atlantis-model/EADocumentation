@@ -83,3 +83,8 @@ mum_PPL_T15 0.41: better balance, although PPL still spikes (although not as muc
 ![alt text](image-1.png)
 
 Increasing KLYS_PPL to 0.003 caused PPL to spike, and PPL to drop to 0 at the beginning of the run. I changed KLYS_PPL to 0.0015; decreasing KLYS_PPL might be a way to prevent initial spike in PPL biomass?
+
+### 19-04-2024: Primary production balancging
+Methodical approach to balancig competition for resources between PPS and PPL - compile list of relevant parameters for growth and mortality of primary producer groups, and compare outcomes.
+#### Relevant parameters:
+- 
