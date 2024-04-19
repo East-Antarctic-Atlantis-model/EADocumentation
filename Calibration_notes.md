@@ -87,10 +87,10 @@ Increasing KLYS_PPL to 0.003 caused PPL to spike, and PPL to drop to 0 at the be
 ### 19-04-2024: Primary production balancing
 Methodical approach to balancig competition for resources between PPS and PPL - compile list of relevant parameters for growth and mortality of primary producer groups, and compare outcomes.
 #### Relevant parameters:
-- mum (growth rate, d^{-1})
+- mum (growth rate, d<sup>-1</sup>)
 - KI (light requirements)
 - KN (N requirements)
 - KS (Si requrements, PPS and IPL only)
 - KF (MicroNut requirements)
-- KLYS (lysis rate, d^{-1})
-- mL (linear mortality, d^{-1})
+- KLYS (lysis rate, d<sup>-1</sup>)
+- mL (linear mortality, d<sup>-1</sup>)
