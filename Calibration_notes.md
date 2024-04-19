@@ -90,9 +90,23 @@ Issue with model is that for PPL, growth exceeds mortality - initial excess PPL 
 Methodical approach to balancing competition for resources between PPS and PPL - compile list of relevant parameters for growth and mortality of primary producer groups, and compare outcomes.
 #### Relevant parameters:
 - mum (growth rate, d<sup>-1</sup>)
+    - increase and decrease PPL_mum by 1%, 5%, 10% (6 runs)
+    - increase and decrease PPS_mum by 1%, 5%, 10% (6 runs)
 - KI (light requirements)
+    - increase and decrease KI_PPL by 1%, 5%, 10% (6 runs)
+    - increase and decrease KI_PPS by 1%, 5%, 10% (6 runs)
 - KN (N requirements)
+    - increase and decrease KN_PPL by 1%, 5%, 10% (6 runs)
+    - increase and decrease KN_PPS by 1%, 5%, 10% (6 runs)
 - KS (Si requrements, PPS and IPL only)
+    - increase and decrease KS_PPL by 1%, 5%, 10% (6 runs)
 - KF (MicroNut requirements)
+    - increase and decrease KF_PPL by 1%, 5%, 10% (6 runs)
+    - increase and decrease KF_PPS by 1%, 5%, 10% (6 runs)
 - KLYS (lysis rate, d<sup>-1</sup>)
+    - increase and decrease KLYS_PPL by 1%, 5%, 10% (6 runs)
+    - increase and decrease KLYS_PPS by 1%, 5%, 10% (6 runs)
 - mL (linear mortality, d<sup>-1</sup>)
+    - increase and decrease mL_PPL by 1%, 5%, 10% (6 runs)
+    - increase and decrease mL_PPS by 1%, 5%, 10% (6 runs)
+Total: 78 runs.
