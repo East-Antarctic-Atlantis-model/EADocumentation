@@ -85,7 +85,9 @@ mum_PPL_T15 0.41: better balance, although PPL still spikes (although not as muc
 Increasing KLYS_PPL to 0.003 caused PPL to spike, and PPL to drop to 0 at the beginning of the run. I changed KLYS_PPL to 0.0015; decreasing KLYS_PPL might be a way to prevent initial spike in PPL biomass?
 
 ### 19-04-2024: Primary production balancing
-Methodical approach to balancig competition for resources between PPS and PPL - compile list of relevant parameters for growth and mortality of primary producer groups, and compare outcomes.
+Issue with model is that for PPL, growth exceeds mortality - initial excess PPL growth likely causes shading issues for primary producer groups. Most likely source of issue is mum_PPL_T15, as B<sub>PP</sub> (biomass) is determined by Chl-a in initial conditions, and scalars are dependent on a combination of initial conditions and subsequent model conditions (i.e., scalars for light and nutrients modulate magnitude of G<sub>PP</sub> and M<sub>PP</sub> but do not modify its "base" rate). 
+
+Methodical approach to balancing competition for resources between PPS and PPL - compile list of relevant parameters for growth and mortality of primary producer groups, and compare outcomes.
 #### Relevant parameters:
 - mum (growth rate, d<sup>-1</sup>)
 - KI (light requirements)
