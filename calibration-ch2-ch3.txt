@@ -1,0 +1,5 @@
+20/11/2026
+  - turned on flag for respiration (from 0 to 1)
+  - turned on shrinkfat (0 to 1)
+  - turned on q10 method (Griffith climate change option)
+Now recalibrating.
