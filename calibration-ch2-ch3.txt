@@ -3,3 +3,7 @@
   - turned on shrinkfat (0 to 1)
   - turned on q10 method (Griffith climate change option)
 Now recalibrating.
+
+- q10 temperature correction set for -1.5C - 2C for all func groups
+- ml and mq set to 0 or close to 0 for KR, IKR, FM to reflect predation-driven control on population
+- mum_KR and mum_IKR increased (testing by 20, 30, 50%): 50% is excessive
